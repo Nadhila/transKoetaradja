@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.asus.transkoetaradja.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUS TRANS KOETARADJA"
+        android:gravity="center"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="#f42d0e"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/schedule"
+        android:background="#00000000"
+        android:id="@+id/schedule"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:onClick="btnSchedule"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tracking"
+        android:background="#00000000"
+        android:id="@+id/button2"
+        android:layout_marginTop="73dp"
+        android:layout_below="@+id/schedule"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnTracking"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stop"
+        android:background="#00000000"
+        android:id="@+id/button3"
+        android:layout_alignBottom="@+id/schedule"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="btnHalte"/>
+</RelativeLayout>

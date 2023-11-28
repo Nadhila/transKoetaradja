@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Mendefinisikan button saat di klik -->
+    <item android:drawable="@drawable/schedule"
+        android:state_pressed="true" />
+
+    <!-- Mendefinisikan button saat terfokus -->
+    <item android:drawable="@drawable/schedule"
+        android:state_focused="true" />
+
+    <!-- Mendefinisikan button saat dalam kondisi normal -->
+    <item android:drawable="@drawable/schedule" />
+
+</LinearLayout>
